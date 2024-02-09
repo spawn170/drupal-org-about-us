@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --bs-primary: #0678be;
+    --bs-primary-dark: #05629b;
+    --bs-dark: #000000;
+    --bs-white: #FFFFFF
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: var(--bs-primary);
+}
+
+.mImage {
+    background-image: url('./assets/image/drupal10_banner_image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 24px;
+}
+
+.subheading {
+    font-size: 20px;
+}
+
+
+.p {
+    font-size: 20px;
+    color: var(--bs-dark);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.carousel-card {
+    min-width: 270px !important;
+    height: auto;
+}
+
+.carousel-card-image {
+    width: 100%;
+    height: 185px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-01 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/image/carousel-01.png');
+}
+
+.carousel-02 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/image/carousel-02.png');
+}
+
+.carousel-03 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/image/carousel-03.png');
+}
+
+.carousel-04 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/image/carousel-04.png');
+}
+
+.carousel-05 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/image/carousel-05.png');
+}
+
+.carousel-card-text {
+    color: var(--bs-white);
+    font-size: 20px;
+    padding: 0px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.carousal-card-content {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+}
+
+
+.carousel-container {
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+.carousel-card {
+    min-width: 100%;
+}
+
+.carousel-controls {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+
+.scroll-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.list {
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.alignItemCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.drupal-card-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0px auto;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.drupal-card {
+    flex: 1;
+    justify-content: center;
+    padding: 0px 16px;
+    text-align: center;
+}
+
+.drupal-card-img {
+    width: 200px;
+    height: auto;
+}
+
+.benifits-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 0px auto;
+    gap: 10px;
+}
+
+.benifits-card {
+    flex: 1;
+    padding: 20px 5px;
+    text-align: center;
+}
+
+.core-feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.call-to-action {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    outline: none;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 32px;
+}
+
+.call-to-action:hover {
+    background-color: var(--bs-primary-dark);
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dflex>a:hover {
+    color: var(--bs-white);
+    text-decoration: none;
+}
+
+.mt-50 {
+    margin-top: 50px
+}
+
+.pv-20 {
+    padding: 20px 0px
+}
+
+.bottom-block-spacing {
+    padding-top: 20px;
+    padding-bottom: 80px
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .drupal-logo {
+        height: 60px;
+    }
+
+    .drupal-tagline-img {
+        height: 30px;
+    }
+
+    body {
+        padding: 0px 5px;
+    }
+
+    .heading {
+        font-size: 18px !important;
+    }
+
+    .subheading {
+        font-size: 16px !important;
+    }
+
+    .benifits-wrapper {
+        flex-direction: column;
+    }
+
+    .carousel-card {
+        min-width: 200px !important;
+        height: auto;
+    }
+
+    .carousel-card-text {
+        font-size: 16px;
+    }
+
+    .carousal-card-content {
+        font-size: 14px;
+    }
+}
+
+/* For screens greater than 768px */
+@media (min-width: 768px) {
+
+    .drupal-logo,
+    .drupal-tagline-img {
+        height: 100%;
+    }
+
+    .p {
+        font-size: 16px;
+    }
+}
